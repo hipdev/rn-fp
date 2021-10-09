@@ -1,15 +1,20 @@
-import React from 'react'
-import { Text, StyleSheet, View, Button, TextInput } from 'react-native'
+import React, { useState } from 'react'
+import { Text, StyleSheet, View, TextInput } from 'react-native'
 
 const TextScreen = () => {
+  const [name, setName] = useState('')
+
   return (
     <View>
-      <Text style={styles.text}>Text input</Text>
+      <Text style={styles.text}>Enter name</Text>
       <TextInput
         style={styles.input}
         autoCapitalize="none"
+        value={name}
+        onChangeText={(newValue) => setName(newValue)}
         autoCorrect={false}
       />
+      <Text style={styles.text}>My name is {name}</Text>
     </View>
   )
 }
