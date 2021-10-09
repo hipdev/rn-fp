@@ -1,9 +1,16 @@
 import React from 'react'
-import { Text, StyleSheet } from 'react-native'
-import ComponentsScreen from './ComponentsScreen'
+import { Text, StyleSheet, View, Button } from 'react-native'
 
 const HomeScreen = () => {
-  return <ComponentsScreen />
+  return (
+    <View>
+      <Text style={styles.text}>Hi there!</Text>
+      <Button
+        onPress={() => console.log('hola')}
+        title="Go to componentes demo"
+      />
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({

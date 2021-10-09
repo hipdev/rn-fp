@@ -20,7 +20,6 @@ const ListScreen = () => {
       keyExtractor={(friend) => friend.name}
       data={friends}
       renderItem={({ item }) => {
-        console.log(item, 'the item')
         //element ===  { item: {name: 'Friend #1'}, index: 0}
         return (
           <Text style={styles.textStyle} key={item.name}>
