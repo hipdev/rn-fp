@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, Button } from 'react-native'
 
 const ColorCounter = ({ color, onIncrease, onDecrease }) => {
   const [colors, setColors] = useState([])
-  console.log(colors)
   return (
     <View>
       <Text>{color}</Text>

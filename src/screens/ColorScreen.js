@@ -4,7 +4,6 @@ import { FlatList } from 'react-native-gesture-handler'
 
 const ColorScreen = () => {
   const [colors, setColors] = useState([])
-  console.log(colors)
   return (
     <View>
       <Button
