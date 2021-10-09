@@ -8,12 +8,12 @@ import {
   Touchable,
 } from 'react-native'
 
-const HomeScreen = () => {
+const HomeScreen = (props) => {
   return (
     <View>
       <Text style={styles.text}>Hi there!</Text>
       <Button
-        onPress={() => console.log('hola')}
+        onPress={() => props.navigation.navigate('Components')}
         title="Go to componentes demo"
       />
       <TouchableOpacity onPress={() => console.log('list pressed')}>
