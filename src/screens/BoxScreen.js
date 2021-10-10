@@ -16,22 +16,18 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderColor: 'black',
     height: 200,
-    justifyContent: 'space-around',
   },
   textOneStyle: {
     borderWidth: 3,
     borderColor: 'red',
-    flex: 4,
   },
   textTwoStyle: {
     borderWidth: 3,
     borderColor: 'red',
-    flex: 4,
+    alignSelf: 'center',
   },
   textThreeStyle: {
     borderWidth: 3,
-    borderColor: 'red',
-    flex: 2,
   },
 })
 
